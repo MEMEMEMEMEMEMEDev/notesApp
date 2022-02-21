@@ -1,10 +1,12 @@
+import { AppRouter } from "./routers/AppRouter";
+import { Provider } from "react-redux";
+import { store } from "./reducers/store/store";
 
-function App() {
-  return (
-    <div className="App" style={{ 'backgroundColor':'black', 'height':'100vh', 'color':'white', 'display':'flex' }}>
-      <h2> hola </h2>
-    </div>
-  );
+
+export const App = () => {
+  return(
+    <Provider store={store}>
+      <AppRouter />
+    </Provider>
+  )
 }
-
-export default App;

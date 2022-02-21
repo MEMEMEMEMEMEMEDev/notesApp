@@ -1,0 +1,115 @@
+@import './input';
+@import './googlebtn';
+@import './button';
+@import './authErr';
+
+.auth {
+  height: 100%;
+  width: 100%;
+
+  &:before {
+    content: "";
+    background: url('../../../assets/authBg.webp');
+    background-position: center;
+    background-size: cover;
+    background-position-y: 55%;
+    height: 100vh;
+    filter: brightness(30%);
+    left: 0;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100vw;
+    will-change: transform; 
+    z-index: -3;
+ }
+
+  &-container {
+    @include centerer;
+    @include centerContent;
+    height: 80%;
+    min-height: 400px;
+    width:80%;
+    min-width: 240px;
+    max-width: 800px;
+
+    &__login {
+      height: 100%;
+      width: 100%;
+      
+      form {
+        @include centerContent;
+        height: 100%;
+        flex-direction: column;
+        border-radius: 30px;
+        justify-content: space-evenly;
+
+        @media (min-width: 900px) {
+          background-color: rgba(61, 61, 61, 0.1);
+        }
+
+        h3 {
+          color: white;
+          @include centerContent;
+          font-weight: 300;
+          letter-spacing: 10px;
+          text-align: center;
+          @include rfs(2rem);
+          height: 10%;
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+          @include rfs(1.3rem);
+          transition: .3s ease-in-out;
+          font-weight: 300;
+          opacity: .9;
+          
+          &:hover {
+            color: rgb(68, 206, 98);
+          }
+        }
+      }
+    }
+
+    &__register {
+      height: 80%;
+      width: 100%;
+
+        h3 {
+          color: white;
+          @include centerContent;
+          font-weight: 300;
+          letter-spacing: 10px;
+          text-align: center;
+          @include rfs(2rem);
+          height: 10%;
+        }
+      
+      form {
+        @include centerContent;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        @media (min-width: 900px) {
+          background-color: rgba(61, 61, 61, 0.1);
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+          @include rfs(1.3rem);
+          transition: .3s ease-in-out;
+          font-weight: 300;
+          opacity: .9;
+          
+          &:hover {
+            color: rgb(68, 206, 98);
+          }
+        }
+      }
+    }
+  }
+}

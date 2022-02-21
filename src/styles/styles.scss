@@ -1,4 +1,13 @@
-
-@import './base/mixin.scss';
 @import './base/settings';
+@import './base/mixin.scss';
 @import './base/normalize.scss';
+
+////////////////////////////////////////////////////////
+@import './components/auth/auth.scss';
+@import './components/JournalScreen/journal';
+@import './components/notes/notes';
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+

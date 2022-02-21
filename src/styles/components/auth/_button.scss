@@ -1,0 +1,18 @@
+
+.btn-auth {
+  @include centerContent;
+  cursor: pointer;
+  color: white;
+  border-radius: 12px;
+  @include rfs(1.2rem);
+  height: 50px;
+  width: 20%;
+  min-width: 200px;
+  border: rgba(255, 255, 255, 0.5) 1px solid;
+  background: transparent;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    background: rgb(32, 175, 194);
+  }
+}
