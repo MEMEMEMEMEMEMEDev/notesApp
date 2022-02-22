@@ -1,40 +1,37 @@
-import { types } from "./types/types"
-
+import { types } from "./types/types";
 
 const initialState = {
-    loading: false,
-    msgError: null
-}
+  loading: false,
+  msgError: null,
+};
 
-
-export const uiReducer = ( state = initialState, action ) => {
-
-  switch ( action.type ) {
+export const uiReducer = (state = initialState, action) => {
+  switch (action.type) {
     case types.uiSetError:
       return {
         ...state,
-        msgError: action.payload
-      }
+        msgError: action.payload,
+      };
 
     case types.uiRemoveError:
       return {
         ...state,
-        msgError: null
-      }
+        msgError: null,
+      };
 
     case types.uiStartLoading:
       return {
         ...state,
-        loading: true
-      }
+        loading: true,
+      };
 
     case types.uiFinishLoading:
       return {
         ...state,
-        loading: false
-      }
+        loading: false,
+      };
 
     default:
       return state;
   }
-}
+};
