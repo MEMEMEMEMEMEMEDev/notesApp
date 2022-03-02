@@ -50,7 +50,7 @@ export const RegisterScreen = () => {
 
         <input
           type="text"
-          placeholder="name"
+          placeholder="Nombre"
           name="name"
           autoComplete="off"
           className="input-auth"
@@ -59,7 +59,7 @@ export const RegisterScreen = () => {
         />
         <input
           type="text"
-          placeholder="email"
+          placeholder="Email"
           name="email"
           autoComplete="off"
           className="input-auth"
@@ -68,7 +68,7 @@ export const RegisterScreen = () => {
         />
         <input
           type="password"
-          placeholder="password"
+          placeholder="Contraseña"
           name="password"
           autoComplete="off"
           className="input-auth"
@@ -78,7 +78,7 @@ export const RegisterScreen = () => {
         <input
           type="password"
           placeholder="confirm password"
-          name="password2"
+          name="Repite tu contraseña"
           autoComplete="off"
           className="input-auth"
           value={password2}
