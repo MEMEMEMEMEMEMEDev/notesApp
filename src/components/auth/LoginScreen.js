@@ -54,7 +54,7 @@ export const LoginScreen = () => {
         }
         <input
           type='text'
-          placeholder='email'
+          placeholder='Correo'
           name='email'
           autoComplete='off'
           className='input-auth'
@@ -63,7 +63,7 @@ export const LoginScreen = () => {
         />
         <input
           type='password'
-          placeholder='password'
+          placeholder='Contraseña'
           name='password'
           autoComplete='off'
           className='input-auth'

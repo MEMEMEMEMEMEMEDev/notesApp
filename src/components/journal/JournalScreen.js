@@ -22,7 +22,7 @@ export const JournalScreen = () => {
       <div className="journal-main">
         <div className="journal-main__entry" onClick={handleAddNew}>
           <i className="far fa-calendar-plus fa-5x" />
-          <p>New Entry</p>
+          <p> Crear Nota </p>
         </div>
         <JournalEntries />
         {active ? (

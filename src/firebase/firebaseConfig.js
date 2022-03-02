@@ -26,3 +26,6 @@ const db = getFirestore();
 const googleAuthProvider = new GoogleAuthProvider();
 
 export { db, googleAuthProvider, doc, setDoc, collection, getDocs };
+
+
+//las variables estarán disponibles durante el proceso de desarrollo, luego irán a su respectivo .ENV

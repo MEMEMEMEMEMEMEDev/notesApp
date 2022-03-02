@@ -10,6 +10,8 @@ export const NotesAppBar = () => {
     dispatch ( startSaveNote(active));
   }
 
+
+// TODO LISTO PARA SUBIR ARCHIVOS A CLOUDINARY
 //   const handlePictureClick = () => {
 //     document.querySelector('#fileSelector').click();
 // }
@@ -18,7 +20,6 @@ const handleFileChange = (e) => {
     const file = e.target.files[0];
     if ( file ) {
         dispatch( startUploading( file ) );
-        console.log(file);
     }
 }
 
