@@ -77,8 +77,8 @@ export const RegisterScreen = () => {
         />
         <input
           type="password"
-          placeholder="confirm password"
-          name="Repite tu contraseña"
+          placeholder="Repite tu contraseña"
+          name="password2"
           autoComplete="off"
           className="input-auth"
           value={password2}
